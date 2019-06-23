@@ -1,0 +1,624 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E96A15D622B29D7F0000E0CF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A15D522B29D7F0000E0CF /* AppDelegate.m */; };
+		E96A15D922B29D7F0000E0CF /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A15D822B29D7F0000E0CF /* ViewController.m */; };
+		E96A15DC22B29D7F0000E0CF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96A15DA22B29D7F0000E0CF /* Main.storyboard */; };
+		E96A15DE22B29D800000E0CF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E96A15DD22B29D800000E0CF /* Assets.xcassets */; };
+		E96A15E122B29D800000E0CF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E96A15DF22B29D800000E0CF /* LaunchScreen.storyboard */; };
+		E96A15E422B29D800000E0CF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A15E322B29D800000E0CF /* main.m */; };
+		E96A15EE22B29D800000E0CF /* GLSLTransformTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A15ED22B29D800000E0CF /* GLSLTransformTests.m */; };
+		E96A15F922B29D800000E0CF /* GLSLTransformUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A15F822B29D800000E0CF /* GLSLTransformUITests.m */; };
+		E96A160D22B29D8A0000E0CF /* GLESUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A160722B29D8A0000E0CF /* GLESUtils.m */; };
+		E96A160E22B29D8A0000E0CF /* GLESMath.c in Sources */ = {isa = PBXBuildFile; fileRef = E96A160922B29D8A0000E0CF /* GLESMath.c */; };
+		E96A161122B29DC00000E0CF /* DLView.m in Sources */ = {isa = PBXBuildFile; fileRef = E96A161022B29DC00000E0CF /* DLView.m */; };
+		E96A161322B2A8840000E0CF /* shaderv.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E96A161222B2A8840000E0CF /* shaderv.vsh */; };
+		E96A161522B2A8970000E0CF /* shaderf.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E96A161422B2A8970000E0CF /* shaderf.fsh */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E96A15EA22B29D800000E0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96A15C922B29D7F0000E0CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96A15D022B29D7F0000E0CF;
+			remoteInfo = GLSLTransform;
+		};
+		E96A15F522B29D800000E0CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E96A15C922B29D7F0000E0CF /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E96A15D022B29D7F0000E0CF;
+			remoteInfo = GLSLTransform;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E96A15D122B29D7F0000E0CF /* GLSLTransform.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GLSLTransform.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96A15D422B29D7F0000E0CF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E96A15D522B29D7F0000E0CF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E96A15D722B29D7F0000E0CF /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E96A15D822B29D7F0000E0CF /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E96A15DB22B29D7F0000E0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E96A15DD22B29D800000E0CF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E96A15E022B29D800000E0CF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E96A15E222B29D800000E0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96A15E322B29D800000E0CF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E96A15E922B29D800000E0CF /* GLSLTransformTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLSLTransformTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96A15ED22B29D800000E0CF /* GLSLTransformTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLTransformTests.m; sourceTree = "<group>"; };
+		E96A15EF22B29D800000E0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96A15F422B29D800000E0CF /* GLSLTransformUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GLSLTransformUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E96A15F822B29D800000E0CF /* GLSLTransformUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GLSLTransformUITests.m; sourceTree = "<group>"; };
+		E96A15FA22B29D800000E0CF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E96A160722B29D8A0000E0CF /* GLESUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GLESUtils.m; sourceTree = "<group>"; };
+		E96A160822B29D8A0000E0CF /* Quaternion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Quaternion.h; sourceTree = "<group>"; };
+		E96A160922B29D8A0000E0CF /* GLESMath.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GLESMath.c; sourceTree = "<group>"; };
+		E96A160A22B29D8A0000E0CF /* GLESUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESUtils.h; sourceTree = "<group>"; };
+		E96A160B22B29D8A0000E0CF /* Vector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vector.h; sourceTree = "<group>"; };
+		E96A160C22B29D8A0000E0CF /* GLESMath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GLESMath.h; sourceTree = "<group>"; };
+		E96A160F22B29DC00000E0CF /* DLView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLView.h; sourceTree = "<group>"; };
+		E96A161022B29DC00000E0CF /* DLView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLView.m; sourceTree = "<group>"; };
+		E96A161222B2A8840000E0CF /* shaderv.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderv.vsh; sourceTree = "<group>"; };
+		E96A161422B2A8970000E0CF /* shaderf.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = shaderf.fsh; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E96A15CE22B29D7F0000E0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15E622B29D800000E0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15F122B29D800000E0CF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E96A15C822B29D7F0000E0CF = {
+			isa = PBXGroup;
+			children = (
+				E96A15D322B29D7F0000E0CF /* GLSLTransform */,
+				E96A15EC22B29D800000E0CF /* GLSLTransformTests */,
+				E96A15F722B29D800000E0CF /* GLSLTransformUITests */,
+				E96A15D222B29D7F0000E0CF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E96A15D222B29D7F0000E0CF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E96A15D122B29D7F0000E0CF /* GLSLTransform.app */,
+				E96A15E922B29D800000E0CF /* GLSLTransformTests.xctest */,
+				E96A15F422B29D800000E0CF /* GLSLTransformUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E96A15D322B29D7F0000E0CF /* GLSLTransform */ = {
+			isa = PBXGroup;
+			children = (
+				E96A160622B29D8A0000E0CF /* Utils */,
+				E96A15D422B29D7F0000E0CF /* AppDelegate.h */,
+				E96A15D522B29D7F0000E0CF /* AppDelegate.m */,
+				E96A15D722B29D7F0000E0CF /* ViewController.h */,
+				E96A15D822B29D7F0000E0CF /* ViewController.m */,
+				E96A160F22B29DC00000E0CF /* DLView.h */,
+				E96A161022B29DC00000E0CF /* DLView.m */,
+				E96A15DA22B29D7F0000E0CF /* Main.storyboard */,
+				E96A15DD22B29D800000E0CF /* Assets.xcassets */,
+				E96A15DF22B29D800000E0CF /* LaunchScreen.storyboard */,
+				E96A15E222B29D800000E0CF /* Info.plist */,
+				E96A15E322B29D800000E0CF /* main.m */,
+				E96A161222B2A8840000E0CF /* shaderv.vsh */,
+				E96A161422B2A8970000E0CF /* shaderf.fsh */,
+			);
+			path = GLSLTransform;
+			sourceTree = "<group>";
+		};
+		E96A15EC22B29D800000E0CF /* GLSLTransformTests */ = {
+			isa = PBXGroup;
+			children = (
+				E96A15ED22B29D800000E0CF /* GLSLTransformTests.m */,
+				E96A15EF22B29D800000E0CF /* Info.plist */,
+			);
+			path = GLSLTransformTests;
+			sourceTree = "<group>";
+		};
+		E96A15F722B29D800000E0CF /* GLSLTransformUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E96A15F822B29D800000E0CF /* GLSLTransformUITests.m */,
+				E96A15FA22B29D800000E0CF /* Info.plist */,
+			);
+			path = GLSLTransformUITests;
+			sourceTree = "<group>";
+		};
+		E96A160622B29D8A0000E0CF /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E96A160722B29D8A0000E0CF /* GLESUtils.m */,
+				E96A160822B29D8A0000E0CF /* Quaternion.h */,
+				E96A160922B29D8A0000E0CF /* GLESMath.c */,
+				E96A160A22B29D8A0000E0CF /* GLESUtils.h */,
+				E96A160B22B29D8A0000E0CF /* Vector.h */,
+				E96A160C22B29D8A0000E0CF /* GLESMath.h */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E96A15D022B29D7F0000E0CF /* GLSLTransform */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96A15FD22B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransform" */;
+			buildPhases = (
+				E96A15CD22B29D7F0000E0CF /* Sources */,
+				E96A15CE22B29D7F0000E0CF /* Frameworks */,
+				E96A15CF22B29D7F0000E0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GLSLTransform;
+			productName = GLSLTransform;
+			productReference = E96A15D122B29D7F0000E0CF /* GLSLTransform.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E96A15E822B29D800000E0CF /* GLSLTransformTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96A160022B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransformTests" */;
+			buildPhases = (
+				E96A15E522B29D800000E0CF /* Sources */,
+				E96A15E622B29D800000E0CF /* Frameworks */,
+				E96A15E722B29D800000E0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96A15EB22B29D800000E0CF /* PBXTargetDependency */,
+			);
+			name = GLSLTransformTests;
+			productName = GLSLTransformTests;
+			productReference = E96A15E922B29D800000E0CF /* GLSLTransformTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E96A15F322B29D800000E0CF /* GLSLTransformUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E96A160322B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransformUITests" */;
+			buildPhases = (
+				E96A15F022B29D800000E0CF /* Sources */,
+				E96A15F122B29D800000E0CF /* Frameworks */,
+				E96A15F222B29D800000E0CF /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E96A15F622B29D800000E0CF /* PBXTargetDependency */,
+			);
+			name = GLSLTransformUITests;
+			productName = GLSLTransformUITests;
+			productReference = E96A15F422B29D800000E0CF /* GLSLTransformUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E96A15C922B29D7F0000E0CF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = soudian;
+				TargetAttributes = {
+					E96A15D022B29D7F0000E0CF = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E96A15E822B29D800000E0CF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E96A15D022B29D7F0000E0CF;
+					};
+					E96A15F322B29D800000E0CF = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E96A15D022B29D7F0000E0CF;
+					};
+				};
+			};
+			buildConfigurationList = E96A15CC22B29D7F0000E0CF /* Build configuration list for PBXProject "GLSLTransform" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E96A15C822B29D7F0000E0CF;
+			productRefGroup = E96A15D222B29D7F0000E0CF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E96A15D022B29D7F0000E0CF /* GLSLTransform */,
+				E96A15E822B29D800000E0CF /* GLSLTransformTests */,
+				E96A15F322B29D800000E0CF /* GLSLTransformUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E96A15CF22B29D7F0000E0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96A161522B2A8970000E0CF /* shaderf.fsh in Resources */,
+				E96A15E122B29D800000E0CF /* LaunchScreen.storyboard in Resources */,
+				E96A15DE22B29D800000E0CF /* Assets.xcassets in Resources */,
+				E96A15DC22B29D7F0000E0CF /* Main.storyboard in Resources */,
+				E96A161322B2A8840000E0CF /* shaderv.vsh in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15E722B29D800000E0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15F222B29D800000E0CF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E96A15CD22B29D7F0000E0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96A15D922B29D7F0000E0CF /* ViewController.m in Sources */,
+				E96A15E422B29D800000E0CF /* main.m in Sources */,
+				E96A161122B29DC00000E0CF /* DLView.m in Sources */,
+				E96A160E22B29D8A0000E0CF /* GLESMath.c in Sources */,
+				E96A160D22B29D8A0000E0CF /* GLESUtils.m in Sources */,
+				E96A15D622B29D7F0000E0CF /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15E522B29D800000E0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96A15EE22B29D800000E0CF /* GLSLTransformTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E96A15F022B29D800000E0CF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E96A15F922B29D800000E0CF /* GLSLTransformUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E96A15EB22B29D800000E0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96A15D022B29D7F0000E0CF /* GLSLTransform */;
+			targetProxy = E96A15EA22B29D800000E0CF /* PBXContainerItemProxy */;
+		};
+		E96A15F622B29D800000E0CF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E96A15D022B29D7F0000E0CF /* GLSLTransform */;
+			targetProxy = E96A15F522B29D800000E0CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E96A15DA22B29D7F0000E0CF /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96A15DB22B29D7F0000E0CF /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E96A15DF22B29D800000E0CF /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E96A15E022B29D800000E0CF /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E96A15FB22B29D800000E0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E96A15FC22B29D800000E0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E96A15FE22B29D800000E0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E96A15FF22B29D800000E0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransform/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransform;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E96A160122B29D800000E0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLSLTransform.app/GLSLTransform";
+			};
+			name = Debug;
+		};
+		E96A160222B29D800000E0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransformTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransformTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLSLTransform.app/GLSLTransform";
+			};
+			name = Release;
+		};
+		E96A160422B29D800000E0CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GLSLTransform;
+			};
+			name = Debug;
+		};
+		E96A160522B29D800000E0CF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = GLSLTransformUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.soudian.GLSLTransformUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GLSLTransform;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E96A15CC22B29D7F0000E0CF /* Build configuration list for PBXProject "GLSLTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96A15FB22B29D800000E0CF /* Debug */,
+				E96A15FC22B29D800000E0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96A15FD22B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransform" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96A15FE22B29D800000E0CF /* Debug */,
+				E96A15FF22B29D800000E0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96A160022B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransformTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96A160122B29D800000E0CF /* Debug */,
+				E96A160222B29D800000E0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E96A160322B29D800000E0CF /* Build configuration list for PBXNativeTarget "GLSLTransformUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E96A160422B29D800000E0CF /* Debug */,
+				E96A160522B29D800000E0CF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E96A15C922B29D7F0000E0CF /* Project object */;
+}

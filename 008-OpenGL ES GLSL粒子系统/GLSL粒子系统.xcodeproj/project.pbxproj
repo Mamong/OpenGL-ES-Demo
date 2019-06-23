@@ -1,0 +1,618 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E90B201B22BC7B7E00FE72C3 /* DLPointParticleShader.vsh in Resources */ = {isa = PBXBuildFile; fileRef = E90B201A22BC7B7E00FE72C3 /* DLPointParticleShader.vsh */; };
+		E90B201D22BC7B9600FE72C3 /* DLPointParticleShader.fsh in Resources */ = {isa = PBXBuildFile; fileRef = E90B201C22BC7B9600FE72C3 /* DLPointParticleShader.fsh */; };
+		E90B202022BC815300FE72C3 /* DLPointParticleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = E90B201F22BC815300FE72C3 /* DLPointParticleEffect.m */; };
+		E915A9D522BDF9A400BC0D6A /* ball.png in Resources */ = {isa = PBXBuildFile; fileRef = E915A9D422BDF9A400BC0D6A /* ball.png */; };
+		E95E4B6122BBC3B500E675F8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4B6022BBC3B500E675F8 /* AppDelegate.m */; };
+		E95E4B6422BBC3B500E675F8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4B6322BBC3B500E675F8 /* ViewController.m */; };
+		E95E4B6722BBC3B500E675F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95E4B6522BBC3B500E675F8 /* Main.storyboard */; };
+		E95E4B6922BBC3B600E675F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95E4B6822BBC3B600E675F8 /* Assets.xcassets */; };
+		E95E4B6C22BBC3B600E675F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E95E4B6A22BBC3B600E675F8 /* LaunchScreen.storyboard */; };
+		E95E4B6F22BBC3B600E675F8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4B6E22BBC3B600E675F8 /* main.m */; };
+		E95E4B7922BBC3B600E675F8 /* GLSL____Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4B7822BBC3B600E675F8 /* GLSL____Tests.m */; };
+		E95E4B8422BBC3B700E675F8 /* GLSL____UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4B8322BBC3B700E675F8 /* GLSL____UITests.m */; };
+		E95E4BD422BBC80200E675F8 /* DLVertexAttribArrayBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = E95E4BD322BBC80200E675F8 /* DLVertexAttribArrayBuffer.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E95E4B7522BBC3B600E675F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E95E4B5422BBC3B500E675F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95E4B5B22BBC3B500E675F8;
+			remoteInfo = "GLSL粒子系统";
+		};
+		E95E4B8022BBC3B700E675F8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E95E4B5422BBC3B500E675F8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E95E4B5B22BBC3B500E675F8;
+			remoteInfo = "GLSL粒子系统";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E90B201A22BC7B7E00FE72C3 /* DLPointParticleShader.vsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DLPointParticleShader.vsh; sourceTree = "<group>"; };
+		E90B201C22BC7B9600FE72C3 /* DLPointParticleShader.fsh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.glsl; path = DLPointParticleShader.fsh; sourceTree = "<group>"; };
+		E90B201E22BC815300FE72C3 /* DLPointParticleEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLPointParticleEffect.h; sourceTree = "<group>"; };
+		E90B201F22BC815300FE72C3 /* DLPointParticleEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLPointParticleEffect.m; sourceTree = "<group>"; };
+		E915A9D422BDF9A400BC0D6A /* ball.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ball.png; sourceTree = "<group>"; };
+		E95E4B5C22BBC3B500E675F8 /* GLSL粒子系统.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GLSL粒子系统.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95E4B5F22BBC3B500E675F8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		E95E4B6022BBC3B500E675F8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		E95E4B6222BBC3B500E675F8 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		E95E4B6322BBC3B500E675F8 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		E95E4B6622BBC3B500E675F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E95E4B6822BBC3B600E675F8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E95E4B6B22BBC3B600E675F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E95E4B6D22BBC3B600E675F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95E4B6E22BBC3B600E675F8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		E95E4B7422BBC3B600E675F8 /* GLSL粒子系统Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLSL粒子系统Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95E4B7822BBC3B600E675F8 /* GLSL____Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GLSL____Tests.m"; sourceTree = "<group>"; };
+		E95E4B7A22BBC3B600E675F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95E4B7F22BBC3B700E675F8 /* GLSL粒子系统UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "GLSL粒子系统UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E95E4B8322BBC3B700E675F8 /* GLSL____UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "GLSL____UITests.m"; sourceTree = "<group>"; };
+		E95E4B8522BBC3B700E675F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E95E4BD222BBC80200E675F8 /* DLVertexAttribArrayBuffer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DLVertexAttribArrayBuffer.h; sourceTree = "<group>"; };
+		E95E4BD322BBC80200E675F8 /* DLVertexAttribArrayBuffer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DLVertexAttribArrayBuffer.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E95E4B5922BBC3B500E675F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7122BBC3B600E675F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7C22BBC3B600E675F8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E95E4B5322BBC3B500E675F8 = {
+			isa = PBXGroup;
+			children = (
+				E95E4B5E22BBC3B500E675F8 /* GLSL粒子系统 */,
+				E95E4B7722BBC3B600E675F8 /* GLSL粒子系统Tests */,
+				E95E4B8222BBC3B700E675F8 /* GLSL粒子系统UITests */,
+				E95E4B5D22BBC3B500E675F8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E95E4B5D22BBC3B500E675F8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E95E4B5C22BBC3B500E675F8 /* GLSL粒子系统.app */,
+				E95E4B7422BBC3B600E675F8 /* GLSL粒子系统Tests.xctest */,
+				E95E4B7F22BBC3B700E675F8 /* GLSL粒子系统UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E95E4B5E22BBC3B500E675F8 /* GLSL粒子系统 */ = {
+			isa = PBXGroup;
+			children = (
+				E915A9D422BDF9A400BC0D6A /* ball.png */,
+				E95E4B5F22BBC3B500E675F8 /* AppDelegate.h */,
+				E95E4B6022BBC3B500E675F8 /* AppDelegate.m */,
+				E95E4B6222BBC3B500E675F8 /* ViewController.h */,
+				E95E4B6322BBC3B500E675F8 /* ViewController.m */,
+				E95E4BD122BBC47600E675F8 /* Kit */,
+				E95E4B6522BBC3B500E675F8 /* Main.storyboard */,
+				E95E4B6822BBC3B600E675F8 /* Assets.xcassets */,
+				E95E4B6A22BBC3B600E675F8 /* LaunchScreen.storyboard */,
+				E95E4B6D22BBC3B600E675F8 /* Info.plist */,
+				E95E4B6E22BBC3B600E675F8 /* main.m */,
+			);
+			path = "GLSL粒子系统";
+			sourceTree = "<group>";
+		};
+		E95E4B7722BBC3B600E675F8 /* GLSL粒子系统Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E95E4B7822BBC3B600E675F8 /* GLSL____Tests.m */,
+				E95E4B7A22BBC3B600E675F8 /* Info.plist */,
+			);
+			path = "GLSL粒子系统Tests";
+			sourceTree = "<group>";
+		};
+		E95E4B8222BBC3B700E675F8 /* GLSL粒子系统UITests */ = {
+			isa = PBXGroup;
+			children = (
+				E95E4B8322BBC3B700E675F8 /* GLSL____UITests.m */,
+				E95E4B8522BBC3B700E675F8 /* Info.plist */,
+			);
+			path = "GLSL粒子系统UITests";
+			sourceTree = "<group>";
+		};
+		E95E4BD122BBC47600E675F8 /* Kit */ = {
+			isa = PBXGroup;
+			children = (
+				E90B201E22BC815300FE72C3 /* DLPointParticleEffect.h */,
+				E90B201F22BC815300FE72C3 /* DLPointParticleEffect.m */,
+				E95E4BD222BBC80200E675F8 /* DLVertexAttribArrayBuffer.h */,
+				E95E4BD322BBC80200E675F8 /* DLVertexAttribArrayBuffer.m */,
+				E90B201A22BC7B7E00FE72C3 /* DLPointParticleShader.vsh */,
+				E90B201C22BC7B9600FE72C3 /* DLPointParticleShader.fsh */,
+			);
+			path = Kit;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E95E4B5B22BBC3B500E675F8 /* GLSL粒子系统 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95E4B8822BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统" */;
+			buildPhases = (
+				E95E4B5822BBC3B500E675F8 /* Sources */,
+				E95E4B5922BBC3B500E675F8 /* Frameworks */,
+				E95E4B5A22BBC3B500E675F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GLSL粒子系统";
+			productName = "GLSL粒子系统";
+			productReference = E95E4B5C22BBC3B500E675F8 /* GLSL粒子系统.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E95E4B7322BBC3B600E675F8 /* GLSL粒子系统Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95E4B8B22BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统Tests" */;
+			buildPhases = (
+				E95E4B7022BBC3B600E675F8 /* Sources */,
+				E95E4B7122BBC3B600E675F8 /* Frameworks */,
+				E95E4B7222BBC3B600E675F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95E4B7622BBC3B600E675F8 /* PBXTargetDependency */,
+			);
+			name = "GLSL粒子系统Tests";
+			productName = "GLSL粒子系统Tests";
+			productReference = E95E4B7422BBC3B600E675F8 /* GLSL粒子系统Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E95E4B7E22BBC3B600E675F8 /* GLSL粒子系统UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E95E4B8E22BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统UITests" */;
+			buildPhases = (
+				E95E4B7B22BBC3B600E675F8 /* Sources */,
+				E95E4B7C22BBC3B600E675F8 /* Frameworks */,
+				E95E4B7D22BBC3B600E675F8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E95E4B8122BBC3B700E675F8 /* PBXTargetDependency */,
+			);
+			name = "GLSL粒子系统UITests";
+			productName = "GLSL粒子系统UITests";
+			productReference = E95E4B7F22BBC3B700E675F8 /* GLSL粒子系统UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E95E4B5422BBC3B500E675F8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = soudian;
+				TargetAttributes = {
+					E95E4B5B22BBC3B500E675F8 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					E95E4B7322BBC3B600E675F8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E95E4B5B22BBC3B500E675F8;
+					};
+					E95E4B7E22BBC3B600E675F8 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = E95E4B5B22BBC3B500E675F8;
+					};
+				};
+			};
+			buildConfigurationList = E95E4B5722BBC3B500E675F8 /* Build configuration list for PBXProject "GLSL粒子系统" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E95E4B5322BBC3B500E675F8;
+			productRefGroup = E95E4B5D22BBC3B500E675F8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E95E4B5B22BBC3B500E675F8 /* GLSL粒子系统 */,
+				E95E4B7322BBC3B600E675F8 /* GLSL粒子系统Tests */,
+				E95E4B7E22BBC3B600E675F8 /* GLSL粒子系统UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E95E4B5A22BBC3B500E675F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95E4B6C22BBC3B600E675F8 /* LaunchScreen.storyboard in Resources */,
+				E90B201B22BC7B7E00FE72C3 /* DLPointParticleShader.vsh in Resources */,
+				E915A9D522BDF9A400BC0D6A /* ball.png in Resources */,
+				E95E4B6922BBC3B600E675F8 /* Assets.xcassets in Resources */,
+				E90B201D22BC7B9600FE72C3 /* DLPointParticleShader.fsh in Resources */,
+				E95E4B6722BBC3B500E675F8 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7222BBC3B600E675F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7D22BBC3B600E675F8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E95E4B5822BBC3B500E675F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95E4B6422BBC3B500E675F8 /* ViewController.m in Sources */,
+				E95E4B6F22BBC3B600E675F8 /* main.m in Sources */,
+				E95E4B6122BBC3B500E675F8 /* AppDelegate.m in Sources */,
+				E90B202022BC815300FE72C3 /* DLPointParticleEffect.m in Sources */,
+				E95E4BD422BBC80200E675F8 /* DLVertexAttribArrayBuffer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7022BBC3B600E675F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95E4B7922BBC3B600E675F8 /* GLSL____Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E95E4B7B22BBC3B600E675F8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E95E4B8422BBC3B700E675F8 /* GLSL____UITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E95E4B7622BBC3B600E675F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E95E4B5B22BBC3B500E675F8 /* GLSL粒子系统 */;
+			targetProxy = E95E4B7522BBC3B600E675F8 /* PBXContainerItemProxy */;
+		};
+		E95E4B8122BBC3B700E675F8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E95E4B5B22BBC3B500E675F8 /* GLSL粒子系统 */;
+			targetProxy = E95E4B8022BBC3B700E675F8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E95E4B6522BBC3B500E675F8 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95E4B6622BBC3B500E675F8 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E95E4B6A22BBC3B600E675F8 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E95E4B6B22BBC3B600E675F8 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E95E4B8622BBC3B700E675F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E95E4B8722BBC3B700E675F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E95E4B8922BBC3B700E675F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E95E4B8A22BBC3B700E675F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E95E4B8C22BBC3B700E675F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLSL粒子系统.app/GLSL粒子系统";
+			};
+			name = Debug;
+		};
+		E95E4B8D22BBC3B700E675F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统Tests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GLSL粒子系统.app/GLSL粒子系统";
+			};
+			name = Release;
+		};
+		E95E4B8F22BBC3B700E675F8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GLSL粒子系统";
+			};
+			name = Debug;
+		};
+		E95E4B9022BBC3B700E675F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = F6GWEHD94Q;
+				INFOPLIST_FILE = "GLSL粒子系统UITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.soudian.GLSL----UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "GLSL粒子系统";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E95E4B5722BBC3B500E675F8 /* Build configuration list for PBXProject "GLSL粒子系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95E4B8622BBC3B700E675F8 /* Debug */,
+				E95E4B8722BBC3B700E675F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95E4B8822BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95E4B8922BBC3B700E675F8 /* Debug */,
+				E95E4B8A22BBC3B700E675F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95E4B8B22BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95E4B8C22BBC3B700E675F8 /* Debug */,
+				E95E4B8D22BBC3B700E675F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E95E4B8E22BBC3B700E675F8 /* Build configuration list for PBXNativeTarget "GLSL粒子系统UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E95E4B8F22BBC3B700E675F8 /* Debug */,
+				E95E4B9022BBC3B700E675F8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E95E4B5422BBC3B500E675F8 /* Project object */;
+}
